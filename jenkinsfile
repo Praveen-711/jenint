@@ -1,9 +1,5 @@
 pipeline{
-    agent {
-        node{
-            label 'apache'
-        }
-    }
+    agent any
     stages{
         stage('vcs'){
             steps{
