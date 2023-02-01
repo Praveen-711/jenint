@@ -13,7 +13,7 @@ pipeline{
         }
         stage('ansible'){
             steps{
-                sh 'ansible-playbook -i hosts apache.yaml'
+                sh 'ansible-playbook -i host apache.yaml'
             }
         }
     }
